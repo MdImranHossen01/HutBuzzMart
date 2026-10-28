@@ -61,3 +61,4 @@ Commercial luxury gift hamper combo set display in a premium open gift box, feat
 ```text
 Still life product photography of stylish lifestyle accessories including trendy designer sunglasses, a sleek leather wallet, and minimal aesthetic home decor pieces arranged aesthetically on stone pedestals, natural soft morning sunlight, architectural shadows, minimalist beige background, luxury catalog aesthetic, 8k, photorealistic --ar 1:1 --v 6.0 --style raw
 ```
+

@@ -48,12 +48,12 @@ export default function HeroAarong({ banners, layout }: HeroSliderProps) {
 
   useEffect(() => {
     if (!emblaApi) return;
-    
+
     // Defer the initial selection update to avoid synchronous setState during render/effect phase
     const timeoutId = setTimeout(() => {
       onSelect();
     }, 0);
-    
+
     emblaApi.on('select', onSelect);
     emblaApi.on('reInit', onSelect);
 
@@ -102,13 +102,13 @@ export default function HeroAarong({ banners, layout }: HeroSliderProps) {
 
   return (
     <div className="relative w-full h-[65vh] sm:h-[80vh] md:h-[90vh] lg:h-[95vh] overflow-hidden bg-muted group">
-      
+
       {/* Embla Viewport */}
       <div className="w-full h-full overflow-hidden" ref={emblaRef}>
         <div className="flex h-full">
           {activeSlides.map((slide, index) => (
             <div key={slide._id || index} className="relative flex-none w-full h-full select-none">
-              
+
               {/* Slide Background Image */}
               <div className="absolute inset-0 w-full h-full">
                 <Image
@@ -133,23 +133,23 @@ export default function HeroAarong({ banners, layout }: HeroSliderProps) {
                       transition={{ duration: 0.8, ease: 'easeOut' }}
                       className="max-w-2xl space-y-4"
                     >
-                      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-playfair tracking-tight text-white leading-tight drop-shadow-md">
-                        {slide.title}
-                      </h1>
-                      {slide.subtitle && (
-                        <p className="text-sm sm:text-base md:text-lg font-medium tracking-widest text-white/90 drop-shadow-sm uppercase">
-                          {slide.subtitle}
-                        </p>
-                      )}
-                      
-                      <div className="pt-4 flex justify-center">
-                        <Link
-                          href={slide.primaryBtnLink || slide.link || '/shop'}
-                          className="px-8 py-3.5 bg-black text-white hover:bg-neutral-900 border border-black text-xs font-black uppercase tracking-[0.25em] transition duration-300 shadow-xl"
-                        >
-                          {slide.primaryBtnText || 'SHOP NOW'}
-                        </Link>
-                      </div>
+                        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-playfair tracking-tight text-white leading-tight drop-shadow-md">
+                          {slide.title}
+                        </h1>
+                        {slide.subtitle && (
+                          <p className="text-sm sm:text-base md:text-lg font-medium tracking-widest text-white/90 drop-shadow-sm uppercase">
+                            {slide.subtitle}
+                          </p>
+                        )}
+
+                        <div className="pt-4 flex justify-center">
+                          <Link
+                            href={slide.primaryBtnLink || slide.link || '/shop'}
+                            className="px-8 py-3.5 bg-black text-white hover:bg-neutral-900 border border-black text-xs font-black uppercase tracking-[0.25em] transition duration-300 shadow-xl"
+                          >
+                            {slide.primaryBtnText || 'SHOP NOW'}
+                          </Link>
+                        </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -187,9 +187,8 @@ export default function HeroAarong({ banners, layout }: HeroSliderProps) {
             <button
               key={index}
               onClick={() => scrollTo(index)}
-              className={`h-2.5 rounded-full transition-all duration-300 ${
-                activeIndex === index ? 'w-8 bg-white' : 'w-2.5 bg-white/40'
-              }`}
+              className={`h-2.5 rounded-full transition-all duration-300 ${activeIndex === index ? 'w-8 bg-white' : 'w-2.5 bg-white/40'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
