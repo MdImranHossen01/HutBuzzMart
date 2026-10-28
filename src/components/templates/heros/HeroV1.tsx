@@ -152,7 +152,7 @@ export default function HeroV1({ banners, layout }: HeroSliderProps) {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
-                            className={`text-base sm:text-4xl md:text-5xl ${layout === 'v3' ? 'lg:text-4xl' : 'lg:text-7xl'} font-black text-white leading-[1.1] tracking-tight drop-shadow-2xl ${banner.subtitle ? (layout === 'v3' ? 'mb-1 sm:mb-6 lg:mb-2' : 'mb-1 sm:mb-6') : (layout === 'v3' ? 'mb-5 sm:mb-8 lg:mb-3' : 'mb-5 sm:mb-8')}`}
+                            className={`text-sm sm:text-2xl md:text-3xl ${layout === 'v3' ? 'lg:text-3xl' : 'lg:text-5xl xl:text-6xl'} font-black text-white leading-[1.15] tracking-tight drop-shadow-2xl ${banner.subtitle ? (layout === 'v3' ? 'mb-1 sm:mb-4 lg:mb-2' : 'mb-1 sm:mb-4') : (layout === 'v3' ? 'mb-4 sm:mb-6 lg:mb-3' : 'mb-4 sm:mb-6')}`}
                           >
                             {banner.title}
                           </motion.h1>

@@ -40,7 +40,7 @@ const Banner = mongoose.models.Banner || mongoose.model('Banner', BannerSchema);
 
 const banners = [
   {
-    title: 'Trendy Designer Dresses & Fashion Wear',
+    title: 'Trendy Fashion Dresses',
     image: '/assets/images/Banner/fashion.webp',
     link: '/shop',
     primaryBtnText: 'Shop Dresses',
@@ -51,7 +51,7 @@ const banners = [
     isActive: true,
   },
   {
-    title: 'Luxury Wall Clocks & Elegant Timepieces',
+    title: 'Luxury Wall Clocks',
     image: '/assets/images/Banner/style.webp',
     link: '/shop',
     primaryBtnText: 'Shop Clocks',
@@ -62,7 +62,7 @@ const banners = [
     isActive: true,
   },
   {
-    title: 'Exclusive Gift Items & Special Keepsakes',
+    title: 'Exclusive Gift Items',
     image: '/assets/images/Banner/jewellery.webp',
     link: '/shop',
     primaryBtnText: 'Find Gifts',
@@ -73,7 +73,7 @@ const banners = [
     isActive: true,
   },
   {
-    title: 'Celebration Combo Packages & Curated Gift Sets',
+    title: 'Special Combo Packages',
     image: '/assets/images/Banner/sneaker.webp',
     link: '/shop',
     primaryBtnText: 'Shop Combos',
@@ -84,7 +84,7 @@ const banners = [
     isActive: true,
   },
   {
-    title: 'Modern Lifestyle Accessories & Gift Accents',
+    title: 'Modern Lifestyle Accessories',
     image: '/assets/images/Banner/sunglass.webp',
     link: '/shop',
     primaryBtnText: 'Shop Accessories',

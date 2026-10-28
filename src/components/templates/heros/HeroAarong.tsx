@@ -133,7 +133,7 @@ export default function HeroAarong({ banners, layout }: HeroSliderProps) {
                       transition={{ duration: 0.8, ease: 'easeOut' }}
                       className="max-w-2xl space-y-4"
                     >
-                      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-playfair tracking-tight text-white leading-tight drop-shadow-md">
+                      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-playfair tracking-tight text-white leading-tight drop-shadow-md">
                         {slide.title}
                       </h1>
                       {slide.subtitle && (
