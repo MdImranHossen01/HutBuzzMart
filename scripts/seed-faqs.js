@@ -34,32 +34,32 @@ const FAQ = mongoose.models.FAQ || mongoose.model('FAQ', FAQSchema);
 
 const faqs = [
   {
-    question: 'What types of products does Hut Buzz Mart offer?',
-    answer: 'Hut Buzz Mart specializes in trendy fashion dresses, premium wall & desk clocks, unique lifestyle gift items, and specially curated combo packages designed for every festive occasion, celebration, and everyday luxury.',
+    question: 'What type of products does Hut Buzz Mart offer?',
+    answer: 'Hut Buzz Mart offers a wide range of healthcare and medical products including prescription medicines, OTC & daily healthcare items, diagnostic devices, surgical instruments, baby nutrition & care products, maternity & motherhood essentials, and clinic & hospital supplies.',
     order: 1,
     isActive: true,
   },
   {
-    question: 'Can I customize gift items or create custom combo packages?',
-    answer: 'Yes, absolutely! We offer personalized gift packaging, custom greeting cards, and tailor-made combo hampers. You can combine your chosen dresses, clocks, and special gift items into a single curated gift package. Simply add your instructions during checkout or reach out to our support team.',
+    question: 'Are the medicines and healthcare products on Hut Buzz Mart authentic?',
+    answer: 'Yes, absolutely. All products listed on Hut Buzz Mart are sourced directly from licensed manufacturers and authorized distributors. We strictly follow government regulations and quality standards to ensure every product is 100% genuine and safe.',
     order: 2,
     isActive: true,
   },
   {
-    question: 'How do I choose the right dress size, and can I exchange if it does not fit?',
-    answer: 'Every dress listing includes a detailed size chart with accurate chest, waist, and length measurements in inches. If you receive a dress that does not fit perfectly, you can easily request a size exchange within 7 days of delivery, provided the item is unworn and original tags remain intact.',
+    question: 'What are the delivery charges and how long does delivery take?',
+    answer: 'Delivery within Dhaka city takes 24 to 48 hours with a shipping fee of 60 BDT. For locations outside Dhaka, shipping is 120 BDT and delivery takes 2 to 5 business days. Free delivery is available on orders above a minimum amount.',
     order: 3,
     isActive: true,
   },
   {
-    question: 'How do you ensure clocks and delicate gift items arrive without damage?',
-    answer: 'We take fragile packaging very seriously. All wall clocks, desk timepieces, and delicate gift decor are securely packed using multi-layer shock-absorbing bubble wrap, protective edge foam, and durable corrugated shipping boxes to guarantee 100% safe arrival at your doorstep.',
+    question: 'Can I return or exchange a product if I receive the wrong item?',
+    answer: 'Yes. If you receive a wrong, damaged, or expired product, you can request a return or exchange within 7 days of delivery. Please contact our support team with your order details and photos of the item. Note that medicines and healthcare consumables cannot be returned once opened for safety reasons.',
     order: 4,
     isActive: true,
   },
   {
-    question: 'What are the delivery charges and delivery times across Bangladesh?',
-    answer: 'We provide nationwide delivery across Bangladesh. Inside Dhaka, delivery takes 24 to 48 hours with a shipping fee of 60 BDT. For locations outside Dhaka, shipping is 120 BDT and takes 2 to 4 business days. Cash on Delivery (COD) and convenient online payments are available.',
+    question: 'Do I need a prescription to order medicines from Hut Buzz Mart?',
+    answer: 'For OTC (over-the-counter) medicines and general healthcare products, no prescription is required. However, for prescription-only medicines, you will need to upload a valid doctor\'s prescription at the time of placing your order. Our pharmacists verify all prescriptions before processing.',
     order: 5,
     isActive: true,
   },
