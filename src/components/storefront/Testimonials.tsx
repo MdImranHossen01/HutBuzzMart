@@ -16,29 +16,29 @@ const fallbackReviews = [
   {
     name: "Ariful Islam",
     role: "Verified Buyer",
-    content: "The quality of the products is amazing. I was skeptical about ordering online, but this shop proved me wrong. Delivery was super fast too!",
-    image: "https://i.pravatar.cc/80?u=1",
+    content: "Ordered a minimalist luxury wall clock for our living room. The craftsmanship and silent sweep mechanism are top-notch! Packaging was super protective with zero damage.",
+    image: "https://i.pravatar.cc/80?u=12",
     rating: 5
   },
   {
     name: "Sadia Afrin",
-    role: "Regular Customer",
-    content: "Excellent customer service! They helped me choose the right size for my dress. The checkout process was smooth as silk. Highly recommended.",
-    image: "https://i.pravatar.cc/80?u=2",
+    role: "Fashion Enthusiast",
+    content: "Excellent customer service! They helped me choose the exact fit for my festive party dress. The fabric quality and stitching are truly premium. Highly recommended!",
+    image: "https://i.pravatar.cc/80?u=25",
     rating: 5
   },
   {
     name: "Tanvir Ahmed",
-    role: "Tech Enthusiast",
-    content: "Bought my new headphones from here. Genuine product with warranty. The packaging was very secure. Keep up the good work!",
-    image: "https://i.pravatar.cc/80?u=3",
+    role: "Verified Buyer",
+    content: "Ordered an anniversary combo package with a customized gift box and greeting card. My wife absolutely loved the presentation! Beautifully packed and delivered right on time.",
+    image: "https://i.pravatar.cc/80?u=33",
     rating: 5
   },
   {
     name: "Nusrat Jahan",
-    role: "Verified Buyer",
-    content: "I love the variety of products they have. It's my one-stop shop for everything I need. The prices are very competitive compared to other local shops.",
-    image: "https://i.pravatar.cc/80?u=4",
+    role: "Regular Customer",
+    content: "Hut Buzz Mart is my favorite place for unique gift items and lifestyle accessories. The product variety is unmatched and prices are very reasonable. Truly 5-star service!",
+    image: "https://i.pravatar.cc/80?u=48",
     rating: 5
   }
 ];
