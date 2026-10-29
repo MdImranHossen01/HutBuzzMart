@@ -48,9 +48,9 @@ export async function GET() {
           tiktok: '',
           whatsapp: ''
         },
-        marqueeText: "Welcome to Hut Buzz Mart! Your trusted online pharmacy and healthcare partner.",
-        metaTitle: "Hut Buzz Mart - Online Pharmacy & Healthcare Store in Bangladesh",
-        metaDescription: "Hut Buzz Mart is your trusted online medical shop in Bangladesh. Buy prescription medicines, OTC drugs, health supplements, wellness products, and medical devices online.",
+        marqueeText: "Welcome to Hut Buzz Mart! Discover premium clocks, trendy fashion dresses, curated gift items and exclusive combo packages.",
+        metaTitle: "Hut Buzz Mart - Premium Clocks, Fashion Dresses & Gift Items in Bangladesh",
+        metaDescription: "Hut Buzz Mart is your trusted online shop in Bangladesh for luxury wall clocks, stylish fashion dresses, thoughtful gift items, and special combo packages.",
         logoUrl: "/logo.webp",
         freeDeliveryThreshold: 0,
         deliveryChargeInsideDhaka: 60,

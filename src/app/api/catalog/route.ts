@@ -29,10 +29,10 @@ const DEFAULT_SPEC = makeBulletDesc(
 // Default catalog data for first-time use
 const DEFAULT_CATALOG = {
   companyInfo: {
-    about: 'Hut Buzz Mart is a leading online pharmacy and medical shop in Bangladesh. We are dedicated to providing high-quality medicines, healthcare supplements, personal care items, baby care products, and medical equipment directly to your doorstep. We guarantee 100% genuine products, safe storage, and swift delivery.',
-    capacity: '100% Genuine Medicines',
+    about: 'Hut Buzz Mart is a premier e-commerce destination in Bangladesh specializing in luxury wall clocks, contemporary fashion dresses, curated gift items, and special combo packages. We deliver authentic, premium quality products right to your doorstep.',
+    capacity: '100% Genuine Clocks & Fashion',
     established: 'Since 2026',
-    certifications: 'DGDA Approved Pharmacy',
+    certifications: 'Verified Brand Partner',
     markets: 'Dhaka & All over Bangladesh',
     address: 'Sarkarbari, Helal Market, Uttar Khan, Dhaka, Bangladesh',
     phone: '+880 1724-338581',

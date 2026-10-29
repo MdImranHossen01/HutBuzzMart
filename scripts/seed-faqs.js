@@ -2,7 +2,6 @@ const mongoose = require('mongoose');
 const fs = require('fs');
 const path = require('path');
 
-// Read .env.local file to get MONGODB_URI
 const envPath = path.join(__dirname, '../.env.local');
 let mongodbUri = '';
 
@@ -18,8 +17,6 @@ if (!mongodbUri) {
   mongodbUri = 'mongodb+srv://hutbuzzmart:ymRjwTMh8LzaUfsT@cluster0.37cirsi.mongodb.net/hutbuzzmart';
 }
 
-console.log('Connecting to MongoDB...');
-
 const FAQSchema = new mongoose.Schema(
   {
     question: { type: String, required: true },
@@ -34,32 +31,32 @@ const FAQ = mongoose.models.FAQ || mongoose.model('FAQ', FAQSchema);
 
 const faqs = [
   {
-    question: 'What type of products does Hut Buzz Mart offer?',
-    answer: 'Hut Buzz Mart offers a wide range of healthcare and medical products including prescription medicines, OTC & daily healthcare items, diagnostic devices, surgical instruments, baby nutrition & care products, maternity & motherhood essentials, and clinic & hospital supplies.',
+    question: 'What types of products does Hut Buzz Mart offer?',
+    answer: 'Hut Buzz Mart offers a curated collection of luxury wall and table clocks, contemporary fashion dresses, personalized gift items, special combo packages, and modern lifestyle decor accessories.',
     order: 1,
     isActive: true,
   },
   {
-    question: 'Are the medicines and healthcare products on Hut Buzz Mart authentic?',
-    answer: 'Yes, absolutely. All products listed on Hut Buzz Mart are sourced directly from licensed manufacturers and authorized distributors. We strictly follow government regulations and quality standards to ensure every product is 100% genuine and safe.',
+    question: 'Are the clocks, dresses, and gift items authentic and high quality?',
+    answer: 'Yes, absolutely. All clocks feature precision sweep silent movements, our dresses are crafted from premium fabrics with quality stitching, and gift items are carefully inspected and packed before dispatch.',
     order: 2,
     isActive: true,
   },
   {
-    question: 'What are the delivery charges and how long does delivery take?',
-    answer: 'Delivery within Dhaka city takes 24 to 48 hours with a shipping fee of 60 BDT. For locations outside Dhaka, shipping is 120 BDT and delivery takes 2 to 5 business days. Free delivery is available on orders above a minimum amount.',
+    question: 'What are the delivery charges and delivery times across Bangladesh?',
+    answer: 'Inside Dhaka city, delivery takes 24 to 48 hours with a delivery fee of 60 BDT. Outside Dhaka, delivery takes 2 to 5 business days with a shipping charge of 120 BDT. Free delivery is available on qualifying promotional orders.',
     order: 3,
     isActive: true,
   },
   {
-    question: 'Can I return or exchange a product if I receive the wrong item?',
-    answer: 'Yes. If you receive a wrong, damaged, or expired product, you can request a return or exchange within 7 days of delivery. Please contact our support team with your order details and photos of the item. Note that medicines and healthcare consumables cannot be returned once opened for safety reasons.',
+    question: 'Can I return or exchange a product if there is a defect or size issue?',
+    answer: 'Yes! We offer a hassle-free 7-day return and exchange policy. If you receive a damaged clock or require a different dress size, contact our support team with your order number and photos for immediate assistance.',
     order: 4,
     isActive: true,
   },
   {
-    question: 'Do I need a prescription to order medicines from Hut Buzz Mart?',
-    answer: 'For OTC (over-the-counter) medicines and general healthcare products, no prescription is required. However, for prescription-only medicines, you will need to upload a valid doctor\'s prescription at the time of placing your order. Our pharmacists verify all prescriptions before processing.',
+    question: 'Do you offer customized gift packaging or special combo gift boxes?',
+    answer: 'Yes! We provide special gift packaging options and curated combo packages suitable for birthdays, anniversaries, weddings, and corporate occasions. You can also add personalized greeting cards to your orders.',
     order: 5,
     isActive: true,
   },
@@ -70,23 +67,32 @@ async function seed() {
     await mongoose.connect(mongodbUri);
     console.log('Connected to MongoDB successfully.');
 
-    // Clear existing FAQs
     const deleteResult = await FAQ.deleteMany({});
     console.log(`Cleared ${deleteResult.deletedCount} existing FAQs.`);
 
-    // Insert new FAQs
     const insertResult = await FAQ.insertMany(faqs);
-    console.log(`Seeded ${insertResult.length} FAQs successfully:`);
-    insertResult.forEach((f, i) => {
-      console.log(`[FAQ ${i + 1}] Question: "${f.question}"`);
-    });
+    console.log(`Seeded ${insertResult.length} relevant FAQs successfully!`);
 
-  } catch (error) {
-    console.error('Seeding error:', error);
-  } finally {
+    // Also update GlobalSettings meta & marquee if exists
+    const db = mongoose.connection.db;
+    const settingsCol = db.collection('globalsettings');
+    const updateRes = await settingsCol.updateOne(
+      {},
+      {
+        $set: {
+          marqueeText: 'Welcome to Hut Buzz Mart! Discover premium clocks, trendy fashion dresses, curated gift items & exclusive combo packages.',
+          metaTitle: 'Hut Buzz Mart - Premium Clocks, Fashion Dresses & Gift Items in Bangladesh',
+          metaDescription: 'Shop luxury wall clocks, elegant fashion dresses, curated gift items, and exclusive combo packages online at Hut Buzz Mart. Fast delivery all across Bangladesh.',
+        }
+      }
+    );
+    console.log('Updated GlobalSettings in MongoDB:', updateRes.modifiedCount);
+
     await mongoose.disconnect();
-    console.log('Disconnected from MongoDB.');
-    process.exit(0);
+    console.log('Database connection closed.');
+  } catch (error) {
+    console.error('Error seeding FAQs:', error);
+    process.exit(1);
   }
 }
 

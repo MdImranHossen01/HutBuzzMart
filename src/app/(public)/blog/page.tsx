@@ -12,8 +12,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = `${protocol}://${hostname}`;
 
   return {
-    title: `Health, Medicine & Wellness Blog | Expert Medical Guides | ${brandName}`,
-    description: `Read professional health articles, daily wellness advice, baby care guides, disease prevention tips, and expert medical updates from the clinical team at ${brandName}.`,
+    title: `Fashion, Home Decor & Gift Guides | Lifestyle Blog | ${brandName}`,
+    description: `Explore styling guides, wall clock decor tips, curated gift ideas, fashion trends, and lifestyle inspiration from ${brandName}.`,
     openGraph: {
       title: `Blog | ${brandName}`,
       description: `Stay updated with the latest news and guides from ${brandName}.`,

@@ -15,8 +15,8 @@ export async function generateMetadata(): Promise<Metadata> {
   const baseUrl = `${protocol}://${hostname}`;
 
   return {
-    title: `Shop Premium Healthcare & Medicines | ${brandName}`,
-    description: `Buy high-quality prescription medicines, OTC daily healthcare, surgical instruments, diagnostic devices, baby care, and personal wellness essentials online at ${brandName}. Fast home delivery and 100% authentic products.`,
+    title: `Shop Luxury Clocks, Fashion Dresses & Gift Items | ${brandName}`,
+    description: `Shop high-quality wall clocks, modern fashion dresses, thoughtful gift items, and exclusive combo packages online at ${brandName}. Fast home delivery and 100% authentic products.`,
     openGraph: {
       title: `Shop | ${brandName}`,
       description: `Explore the wide range of products at ${brandName}.`,

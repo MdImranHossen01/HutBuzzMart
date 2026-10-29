@@ -41,8 +41,8 @@ export const SECTION_TEMPLATES: SectionTemplate[] = [
     description: 'Main banner with headline and CTA',
     icon: 'layout',
     defaultContent: {
-      headline: 'Transform Your Health Naturally',
-      subheadline: 'Discover the power of alternative medicine with our premium products.',
+      headline: 'Elevate Your Style & Living Space',
+      subheadline: 'Discover luxury wall clocks, trendy fashion dresses, and exclusive gift items.',
       ctaText: 'Shop Now',
       ctaLink: '#order',
       backgroundImage: '/assets/hero-placeholder.webp',
@@ -56,12 +56,12 @@ export const SECTION_TEMPLATES: SectionTemplate[] = [
     icon: 'shopping-bag',
     defaultContent: {
       productId: '',
-      title: 'Premium Health Booster',
-      price: 1250,
-      salePrice: 990,
-      description: 'Our most popular supplement for daily energy and immunity.',
+      title: 'Luxury Minimalist Wall Clock',
+      price: 1850,
+      salePrice: 1490,
+      description: 'Silent quartz movement wall clock with sleek modern aesthetics for home and office decor.',
       image: '/assets/product-placeholder.webp',
-      benefits: ['100% Organic', 'No Side Effects', 'Fast Results'],
+      benefits: ['100% Silent Movement', 'Premium Craftsmanship', '1 Year Warranty'],
     }
   },
   {

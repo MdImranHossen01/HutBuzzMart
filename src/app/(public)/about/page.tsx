@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 
 export const metadata: Metadata = {
   title: 'About Us | Hut Buzz Mart',
-  description: 'Hut Buzz Mart - Premium menswear brand in Bangladesh. Explore our high-quality collection of T-shirts, Polo Shirts, Casual & Formal Shirts, and Hoodies designed for modern comfort.',
+  description: 'Hut Buzz Mart - Hut Buzz Mart is your premier destination for luxury wall & table clocks, elegant fashion dresses, curated gift items, and exclusive combo packages in Bangladesh.',
 };
 
 async function getSettings() {
@@ -42,7 +42,7 @@ export default async function AboutPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.1),rgba(255,255,255,0))]" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary mb-4">
-            <Sparkles className="h-3 w-3" /> Premium Menswear & Streetwear
+            <Sparkles className="h-3 w-3" /> Clocks, Fashion & Curated Gifts
           </span>
           <h1 className="text-4xl md:text-6xl font-black tracking-tight text-foreground mb-6">
             About <span className="text-primary">Us</span>
@@ -59,7 +59,7 @@ export default async function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div className="p-4 space-y-1">
               <p className="text-3xl md:text-4xl font-extrabold text-primary">100%</p>
-              <p className="text-xs md:text-sm text-muted-foreground font-medium">Premium Combed Cotton</p>
+              <p className="text-xs md:text-sm text-muted-foreground font-medium">Authentic Products</p>
             </div>
             <div className="p-4 space-y-1">
               <p className="text-3xl md:text-4xl font-extrabold text-primary">10k+</p>
@@ -83,13 +83,13 @@ export default async function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
-                Connecting Premium Quality Fabrics with Modern Trends
+                Elevating Modern Living with Timeless Elegance & Style
               </h2>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                At Hut Buzz Mart, we believe that style and comfort should go hand in hand. We curate each piece of apparel—whether it is an everyday t-shirt, a smart polo, a classic shirt, or a cozy hoodie—using top-grade fabric blends that ensure durability, breathability, and a premium feel.
+                At Hut Buzz Mart, we bring together elegance, functionality, and thoughtfulness. We curate a distinct collection of wall clocks, contemporary fashion dresses, personalized gift items, and special combo packages designed to add charm to your home and lifestyle.
               </p>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-                Our materials are ethically sourced and processed under strict quality inspections. By prioritizing advanced stitching techniques, pre-shrunk fabrics, and high-quality dye retention, we ensure you receive long-lasting fashion essentials.
+                Every clock movement is thoroughly tested, fabrics are carefully chosen for fine texture and style, and gift packages are curated with premium packaging. We take pride in delivering guaranteed authenticity and superior customer satisfaction across Bangladesh.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
@@ -99,7 +99,7 @@ export default async function AboutPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm mb-1">Our Mission</h4>
-                    <p className="text-xs text-muted-foreground">To deliver premium, comfortable, and trendy fashion essentials that empower men to look and feel their absolute best.</p>
+                    <p className="text-xs text-muted-foreground">To inspire everyday living and celebrations by providing exquisite clocks, trendy dresses, and memorable gift collections of unparalleled quality.</p>
                   </div>
                 </div>
                 <div className="flex gap-4">
@@ -108,7 +108,7 @@ export default async function AboutPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-sm mb-1">Our Vision</h4>
-                    <p className="text-xs text-muted-foreground">To become Bangladesh's leading choice for premium casual and streetwear fashion by setting standard benchmarks for clothing quality and customer satisfaction.</p>
+                    <p className="text-xs text-muted-foreground">To be the most trusted lifestyle and gift destination in Bangladesh, celebrated for unique designs, reliable quality, and joyful shopping experiences.</p>
                   </div>
                 </div>
               </div>
@@ -221,10 +221,10 @@ export default async function AboutPage() {
       <section className="py-20 text-center relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10 space-y-6">
           <h2 className="text-3xl md:text-5xl font-black tracking-tight max-w-2xl mx-auto leading-tight">
-            Upgrade Your Wardrobe with Hut Buzz Mart Essentials
+            Elevate Your Home & Lifestyle with Hut Buzz Mart
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto text-sm">
-            Browse our collection today and choose the perfect outfits for your everyday look.
+            Explore our curated clocks, gorgeous dresses, and delightful gift packages today.
           </p>
           <div className="flex flex-wrap gap-4 justify-center pt-4">
             <Link href="/shop" passHref>
