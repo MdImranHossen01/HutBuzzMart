@@ -3,19 +3,8 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
   images: {
+    unoptimized: true,
     remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '*.r2.dev',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'pub-*.r2.dev',
-        port: '',
-        pathname: '/**',
-      },
       {
         protocol: 'https',
         hostname: 'i.ibb.co',
@@ -24,7 +13,19 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'ibb.co',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'picsum.photos',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.googleusercontent.com',
         port: '',
         pathname: '/**',
       },
@@ -46,6 +47,49 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'secure.gravatar.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.r2.dev',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pub-414a30b21d864299babfe0a87a37eacc.r2.dev',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.hutbuzzmart.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.hutbuzzmart.com',
+        port: '',
+        pathname: '/**',
+      },
+
     ],
     qualities: [75, 80, 100],
   },
